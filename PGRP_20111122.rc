@@ -1,0 +1,606 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PGRP_20111122.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\PGRP_20111122.ico"
+IDR_PGRP_2TYPE          ICON    DISCARDABLE     "res\\PGRP_20111122Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+BMP_DEADBUD             BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+BMP_BLANK               BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+BMP_OBSTACLE            BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+BMP_BUD                 BITMAP  DISCARDABLE     "res\\bitmap3.bmp"
+BMP_STEM                BITMAP  DISCARDABLE     "res\\bitmap4.bmp"
+BMP_START               BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+BMP_TARGET              BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+BMP_PATH                BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDR_TOOLBAR1            BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+BMP_GETPOINT            BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_TOOLBAR1 TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_MAP_NEW
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 PGRP_20111122(&A)...",   ID_APP_ABOUT
+    END
+END
+
+IDR_PGRP_2TYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "PGRP"
+    BEGIN
+        MENUITEM "Run(&D)\tCtrl+R",             IDC_PGRP_Run
+        POPUP "Config(&F)"
+        BEGIN
+            MENUITEM "Init",                        IDC_PGRP_Init
+        END
+        MENUITEM "Save Result(&S)\tCtrl+S",     ID_PGRP_Save
+        MENUITEM "Show Result(&W)\tCtrl+W",     ID_Menu_Show_Result
+    END
+    POPUP "Map"
+    BEGIN
+        MENUITEM "Save(&S)",                    ID_Map_Save
+        MENUITEM "Custom New Map",              ID_Map_Custom
+    END
+    POPUP "Set"
+    BEGIN
+        MENUITEM "Calculation ",                ID_PGRP_Calculation_Flag
+    END
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "窗口(&W)"
+    BEGIN
+        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
+        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 PGRP_20111122(&A)...",   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "R",            IDC_PGRP_Run,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_PGRP_Save,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "W",            ID_Menu_Show_Result,    VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 PGRP_20111122"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PGRP_20111122 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 222, 187
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Para Configration"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "OK",IDOK,124,138,37,20
+    PUSHBUTTON      "Cancel",IDCANCEL,170,137,34,21
+    EDITTEXT        IDC_EDIT1,63,54,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,63,70,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,164,54,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,164,70,45,13,ES_AUTOHSCROLL
+    LTEXT           "Start Point X",IDC_STATIC,16,56,44,12
+    LTEXT           "Start Point Y",IDC_STATIC,16,72,45,12
+    LTEXT           "Target Point X",IDC_STATIC,112,55,50,12
+    LTEXT           "Target Point Y",IDC_STATIC,112,71,50,12
+    PUSHBUTTON      "Read",IDC_BUTTON_Read_Init,66,9,36,14
+    PUSHBUTTON      "Save",IDC_BUTTON_Save_Init,173,9,36,14
+    EDITTEXT        IDC_EDIT5,63,92,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,164,92,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,63,108,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,164,108,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,63,124,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,63,140,45,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,63,156,45,13,ES_AUTOHSCROLL
+    LTEXT           "Search Range",IDC_STATIC,16,93,46,12
+    LTEXT           "K LI Block",IDC_STATIC,112,93,46,12
+    LTEXT           "BranOff Rate",IDC_STATIC,16,109,46,12
+    LTEXT           "BranOff Age",IDC_STATIC,112,108,46,12
+    LTEXT           "K3",IDC_STATIC,16,157,46,12
+    LTEXT           "K2",IDC_STATIC,16,141,46,12
+    LTEXT           "K1",IDC_STATIC,16,125,46,12
+    LTEXT           "Map Name",IDC_STATIC,17,32,44,12
+    PUSHBUTTON      "Load Map",IDC_BUTTON_LoadMap,120,9,36,14
+    LTEXT           "Map_Name",IDC_STATIC_Mapname,65,32,137,11
+    DEFPUSHBUTTON   "Defult",IDC_BUTTON_Defult,17,9,36,14
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 133, 114
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Result_Info"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,24,93,32,14
+    PUSHBUTTON      "Cancel",IDCANCEL,70,93,33,14
+    LTEXT           "Map",IDC_STATIC,15,16,19,9
+    LTEXT           "Start",IDC_STATIC,15,31,19,9
+    LTEXT           "Target",IDC_STATIC,15,46,23,9
+    LTEXT           "Path Length",IDC_STATIC,15,61,43,9
+    LTEXT           "Iteration Times",IDC_STATIC,15,76,50,9
+    EDITTEXT        IDC_EDIT_MapName,54,14,65,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_StartX,58,30,26,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_StartY,88,30,26,13,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_TargetX,58,45,26,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_TargetY,88,45,26,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_PathLength,73,60,33,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_Iteration_Times,73,75,33,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+END
+
+IDD_DIALOG3 DIALOG DISCARDABLE  0, 0, 159, 77
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mode_Selection"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,19,56,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,91,56,50,14
+    CONTROL         "Auto calculate in each change",
+                    IDC_RADIO_Calculatie_Each,"Button",BS_AUTORADIOBUTTON,21,
+                    19,123,14
+    CONTROL         "Don't calcualte in each change",IDC_RADIO_Donot_Cal,
+                    "Button",BS_AUTORADIOBUTTON,21,35,118,14
+END
+
+IDD_DIALOG4 DIALOG DISCARDABLE  0, 0, 163, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Map"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,106,181,36,14
+    LTEXT           "Map Name",IDC_STATIC,14,19,44,12
+    EDITTEXT        IDC_EDIT_Map_Name,64,17,86,13,ES_AUTOHSCROLL
+    GROUPBOX        "Circle",IDC_STATIC,14,38,134,51
+    LTEXT           "Center",IDC_STATIC,21,53,27,10
+    LTEXT           "Radius",IDC_STATIC,21,70,27,10
+    EDITTEXT        IDC_EDIT_Circle_Center_X,49,53,27,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIT_Circle_Radius,57,69,36,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Create",IDC_MapEdit_Circle,111,58,32,14
+    GROUPBOX        "Rectangle",IDC_STATIC,14,96,134,61,WS_GROUP
+    LTEXT           "LeftUp Vertex",IDC_STATIC,18,109,26,19
+    EDITTEXT        IDC_EDIT_Rect_LUX,54,112,24,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_Rect_LUY,82,112,26,13,ES_AUTOHSCROLL | WS_GROUP
+    LTEXT           "RightDown Vertex",IDC_STATIC,17,131,37,22
+    EDITTEXT        IDC_EDIT_Rect_RDX,54,134,25,13,ES_AUTOHSCROLL | WS_GROUP
+    EDITTEXT        IDC_EDIT_Rect_RDY,82,134,26,13,ES_AUTOHSCROLL | WS_GROUP
+    PUSHBUTTON      "Create",IDC_MapEdit_Rec,112,124,32,14
+    PUSHBUTTON      "Save",ID_Map_Save,81,160,36,14
+    EDITTEXT        IDC_EDIT_Circle_Center_Y,81,53,26,12,ES_AUTOHSCROLL | 
+                    WS_GROUP
+    PUSHBUTTON      "Load Map",IDC_BUTTON_LoadMap,39,160,36,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PGRP_20111122 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PGRP_20111122\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2011\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PGRP_20111122.EXE\0"
+            VALUE "ProductName", "PGRP_20111122 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 216
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 180
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 126
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_DIALOG3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_DIALOG4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "PGRP_20111122"
+    IDR_PGRP_2TYPE          "\nPGRP_2\nPGRP_2\n\n\nPGRP20111122.Document\nPGRP_2 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PGRP_20111122"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "将图标排列在窗口底部\n排列图标"
+    ID_WINDOW_CASCADE       "排列窗口成相互重叠\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "排列窗口成互不重叠\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+    AFX_IDS_MDICHILD        "激活该窗口"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PGRP_20111122.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
